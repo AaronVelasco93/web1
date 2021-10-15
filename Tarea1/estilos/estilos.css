@@ -46,7 +46,7 @@
 }
 
 .tamañoletra{
-    font-size: 30px;
+    font-size: 35px;
 }
 
 /*Bordes*/
@@ -75,3 +75,17 @@
 
 }
 
+/*tamaños  */
+.tamañorecuadro{
+    width: 100%;
+
+}
+
+/*margen*/
+
+
+.margen{
+
+    margin: -5px;
+    padding: -5px;
+}
