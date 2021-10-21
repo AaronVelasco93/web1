@@ -1,8 +1,24 @@
+@font-face {
 
+    font-family: fuenteAaron;/*Nombre con el cual llamare a mi fuente*/
+    
+    src: url(Fuente/Carlo\ Melow\ Font\ by\ 7NTypes.otf);/*Ruta donde esta la fuente*/
+    
+    }
+
+    .fondoimagen{
+        background-image: url(media/descarga.jpg);
+        width: 100%;
+        background-repeat:no-repeat;
+        text-align: center;
+        background-size: 10rem;/*Tamaño especifico de las imagenes de fondo*/
+        padding: 25px;
+    }
 
 body{
     background-color: #E74C3C ;   
     font-family: sans-serif;
+    padding: 5em;
     
 }
 
@@ -12,7 +28,7 @@ body{
 }
 
 .fondoazul{
-    background-color: aqua;
+    background-color: rgb(65, 172, 172);
     
 }
 
@@ -29,17 +45,21 @@ body{
 }
 .texto2{
 
-    font-size: 1em;
+    padding: 5px;
+    font-size: 2em;
     color: white;
     text-align: left;
+    font-family: fuenteAaron;
+   
 
 }
 
 .texto3{
 
-    font-size: 1em;
+    font-size: 2em;
     text-align: center;
     color: white;
+    padding-bottom: 15px;
 
 }
 
@@ -48,15 +68,25 @@ body{
     font-size: 1em;
     color: white;
     text-align: left;
-
+    font-family: fuenteAaron;
+    padding-left:15px ;
 }
 
 .imagenEstilo{
 
-    width: 100%;
+    width: 150px;
     text-align: center;
 }
 
 
 
+.bordeblanco{
+    border: 20px solid white;
+    border-radius: 15px;
 
+}
+
+.separa{
+
+    padding: 1em;
+}
