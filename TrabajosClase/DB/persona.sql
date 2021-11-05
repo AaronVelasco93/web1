@@ -15,7 +15,7 @@ CREATE TABLE `alumno`(
     `carrera` text not null,
     `no_cuenta` int (10) not null,
     `direccion` text not null,
-    `telefono`varchar (8) not null,
+    `telefono`varchar (12) not null,
     `email` text not null,
     `password` varchar (8) not null,
     `fecha_registro` datetime not null default current_timestamp,
@@ -24,9 +24,9 @@ CREATE TABLE `alumno`(
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Agregar registros*/
-INSERT INTO `alumno` (`nombre_usuario`, `carrera`, `no_cuenta`, `direccion`, `telefono`, `email`,`password`,`fecha_registro`,`permisos`)values
-('Aaron Velasco', 'ICO','413112576','Callejon la Gloria 15','5626198295','aaronvelasco1993@outlook.com','123456'),
-('Maria de Jesus Flores', 'ENE','521654','Santa Cruz','51351552','maryFH@otlook.com','123456', '2020-01-28 13:45:02');
+INSERT INTO `alumno`(`nombre_usuario`, `carrera`, `no_cuenta`, `direccion`, `telefono`, `email`,`password`)values
+('Aaron Velasco', 'ICO','413112576','Callejon la Gloria 15','26198295','aaronvelasco1993@outlook.com','18456'),
+('Maria de Jesus Flores', 'ENE','521654','Santa Cruz','51351552','maryFH@otlook.com','12348');
 
 
 /*definir la llave primaria */
