@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 1</title>
 </head>
+
 <body>
-    
-<!-- Get: los valores que enviamos se añaden a la direccion inidicado dentro de nuestro atributo
+
+    <!-- Get: los valores que enviamos se añaden a la direccion inidicado dentro de nuestro atributo
     post: los valores los enviamos de manera separada
     --->
 
@@ -21,7 +23,7 @@
             if (tecla == 8) {
                 return true;
             }
-    
+
             //patron de entrada, en este caso solo acepta numero
             patron = /[0-9]/;
             tecla_final = String.fromCharCode(tecla);
@@ -33,25 +35,39 @@
         <h1>Mi primer formulario</h1>
     </div>
 
-    <form   action=""  method="get" >
-        <p>Nombre: <input type="text" name="nombre"  size="40"  required  autofocus >  </p>
-        <p>Año de nacimiento  <input type="number" name="nacido"  min="1975"  >  </p>
-        <p>Email <input type="email" name="correo"   placeholder="Correo con dominio @aragon.unam.mx" size="50" > </p>
-        <p>Numero de tarjeta de Credito  <input type="text" onkeypress="return valida(event)" name="noTargeta" maxlength="16"  placeholder="Ingresa los 16 digito de tu targeta"  ></p>
-        <p>Password: <input  type="password" name="contraseña" placeholder="Ingresa tu password"  ></p>
+    <form action="" method="get">
+        <p>Nombre: <input type="text" name="nombre" size="40" required autofocus> </p>
+        <p>Año de nacimiento <input type="number" name="nacido" min="1975"> </p>
+        <p>Email <input type="email" name="correo" placeholder="Correo con dominio @aragon.unam.mx" size="50"> </p>
+        <p>Numero de tarjeta de Credito <input type="text" onkeypress="return valida(event)" name="noTargeta"
+                maxlength="16" placeholder="Ingresa los 16 digito de tu targeta"></p>
+        <p>Password: <input type="password" name="contraseña" placeholder="Ingresa tu password"></p>
 
         <hr>
+
+        <ul>
+            <li><input type="radio" name="genero" value="H"> Hombre</li>
+            <li><input type="radio" name="genero" value="M"> Mujer</li>
+            <li><input type="radio" name="genero" value="O"> Otro</li>
+        </ul>
+
         <p>Genero:
-            <input type="radio" name="genero" value="H" > Hombre
-            <input type="radio" name="genero" value="M" > Mujer
-            <input type="radio" name="genero"  value="O"> Otro
+            
+
+        
         </p>
 
         <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar" >
+        <input type="reset" value="Borrar">
+
+        <button type="submit">
+            <img src="dogo.jpg" alt="dogo Imagen" width="35" height="35">
+            Enviar
+        </button>
 
 
     </form>
 
 </body>
+
 </html>
