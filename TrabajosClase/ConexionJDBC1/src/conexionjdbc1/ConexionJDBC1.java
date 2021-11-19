@@ -9,7 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
+import java.sql.*;
 /**
  *
  * @author Aaron
@@ -27,9 +27,7 @@ public class ConexionJDBC1 {
          * nombreDB: fes_ico
          * user:root
          * pass:123456
-         * 
-         * 
-         **/
+         */
         
         String host;
         String dbName;
@@ -41,7 +39,7 @@ public class ConexionJDBC1 {
             //vamos a definir la URL
             
             host="jdbc:mysql://localhost:3306/";
-            dbName="fes_ico";
+            dbName="punto_venta";
             
             //Establecer nuestra conexion
             Connection db = DriverManager.getConnection(host+dbName,"root","123456");
@@ -68,9 +66,17 @@ public class ConexionJDBC1 {
              * en orden, por lo que se puede usar la sentencia ORDER BY para asignar un 
              * determinado orden establecido en las filas del ResultSet.
              */
-            ResultSet rs=st.executeQuery("SELECT * FROM ALUMNO");
+            ResultSet rs=st.executeQuery("SELECT * FROM clientes");
             
+            //vamos a leer los resultados
             
+            if(rs.wasNull()){
+                System.out.println("La tabla esta vacia");
+            }
+            
+            while(rs.next()){
+                System.out.println(rs.getString("empresa"));
+            }
             
             
             
